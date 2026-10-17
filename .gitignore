@@ -1,0 +1,7 @@
+*.pt
+*.pyc
+/reachy_test
+/reachy_test_13
+/reachy_test_14
+# Kokoro-82M ONNX TTS model weights (downloaded separately, see decisions.md)
+/tts_models

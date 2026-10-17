@@ -1,0 +1,22 @@
+# Python packages for the reachy_test virtual environment (Python 3.14.6)
+# Recreate with: reachy_test\Scripts\python.exe -m pip install -r requirements.txt
+reachy-mini
+# reachy-mini[mujoco] pins mujoco==3.3.0, which has no Python 3.14 wheels -> use a newer mujoco instead
+mujoco==3.15.0
+openai
+openai-whisper
+sounddevice
+numpy
+scipy
+opencv-python
+ultralytics
+transformers
+torch
+pillow
+huggingface_hub
+# Kokoro-82M Text-to-Speech (ONNX-Variante, da das offizielle `kokoro`-Paket
+# kein Python 3.14 unterstützt). Modellgewichte liegen separat in tts_models/
+# (siehe decisions.md) und werden NICHT über pip installiert.
+kokoro-onnx
+soundfile
+
