@@ -19,10 +19,12 @@ The robot will use a local llm (running in ollama) over the openai api to reason
 
 # run the project
 
-`.\reachy_test_14\Scripts\python.exe run_sim_daemon.py` terminal 1: simulator
-`.\reachy_test_14\Scripts\python.exe llmtest.py` terminal 2: application
+start the python environment first
 
-`.\reachy_test_14\Scripts\python.exe voicechat.py` terminal 2 (alternative): voice chat demo
+`python run_sim_daemon.py` terminal 1: simulator
+`python llmtest.py` terminal 2: application
+
+`python voicechat.py` terminal 2 (alternative): voice chat demo
 (Whisper -> local LLM -> Kokoro-82M TTS -> Reachy Mini speakers). Requires the
 Kokoro-82M ONNX model files in `tts_models/` (not in git, see decisions.md for the
 download links): `tts_models/kokoro-v1.0.onnx` and `tts_models/voices-v1.0.bin`.
