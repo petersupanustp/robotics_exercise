@@ -12,7 +12,7 @@ The robot will use a local llm (running in ollama) over the openai api to reason
 
 ## Python
 
-- Use the anaconda python executable in `C:\Users\lbsupan\AppData\Local\anaconda3\python.exe` as default.
+- Use a python 3.14 python executable as default if more than one are found.
 - Never install any python package in the base environment, neither with pip nor with conda!
 - use venv to create local environments
 - write a requirements.txt file for everything that has been installed so that the requirement can easily be recreated.
